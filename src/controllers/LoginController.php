@@ -28,7 +28,6 @@ class LoginController extends Controller {
                 $_SESSION['token'] = $token;
                 $this->redirect('/');
             }else{
-                echo "teste";die;
                 $_SESSION['flash'] = 'E-mail e/ou senha não conferem.';
                 
                 $this->redirect('/login');
